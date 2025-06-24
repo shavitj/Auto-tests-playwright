@@ -1,4 +1,4 @@
-# קובץ הגדרות למערכת GitHub Actions
+# Github Actions settings file
 name: Playwright Tests
 
 on:
