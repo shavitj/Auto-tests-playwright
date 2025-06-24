@@ -11,6 +11,7 @@ test.describe('Login Tests for Different User Types', () => {
     'visual_user'
   ];
 
+  //for loop
   for (const user of users) {
     test(`Test login with '${user}'`, async ({ page }) => {
       const loginPage = new LoginPage(page);
@@ -20,5 +21,6 @@ test.describe('Login Tests for Different User Types', () => {
       await loginPage.login(user, 'secret_sauce');
       await productsPage.expectProductsTitle();
     });
+
   }
 }); 
