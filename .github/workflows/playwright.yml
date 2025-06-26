@@ -1,10 +1,9 @@
 # Github Actions settings file
 name: Playwright Tests
-
 on:
-  push:
-    branches: [ main, master ]
-  pull_request:
+    push:
+      branches: [ main, master ]
+    pull_request:
       branches: [ main, master ]
     # הרץ בשעה 9:00 ו-18:00 כל יום (זמן UTC)
     schedule:
